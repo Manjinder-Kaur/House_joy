@@ -1,0 +1,46 @@
+<div class="footer">
+				<div class="container">
+				<div class="footer-bottom-at">
+					<div class="col-md-6 footer-grid">
+						<h3>House Joy</h3>
+						<h4><p>House is responsive website.It is easy to used for Mobile,Laptop,Desktop,I-pad,Tablet.House Joy is Our Time Saving Service.It is Easy To Acess any person</p></h4>
+					</div>
+					<div class="col-md-6 footer-grid-in">
+					   	<div class="footer-nav">
+					<ul>
+					<li  class="active"><a href="index.php">Home</a></li>
+					 <li><a href="a.php">Service</a></li>
+					 <?php
+			$t=0;
+			if(isset($_SESSION['cart'])&&count($_SESSION['cart'])>0){
+				foreach($_SESSION['cart'] as $id=>$quantity){
+					$t++;
+				}
+				count($_SESSION['cart']);
+			}
+			?>
+					  <li><a href="checkout.php">cart<?php echo $t; ?></a></li>
+					  <li><a href="addvendor.php">Vendor</a></li>
+					  <li><a href="contactus.php">Contact us</a></li>
+     		 		</ul>
+					</ul>
+					<p class="footer-class"style="font-size:17px"> © 2017 House Joy Design by  <a href="http://w3layouts.com/" target="_blank">Manjinder Kaur</a> </p>
+					</div>
+					<div class="container">
+		
+		<div class="col-md-5 col-md-offset-2 contact_index-right">
+			<ul class="contact_social">
+			  <li><a href="http://facebook.com"><i class="facebook"></i></a></li>
+			  <li><a href="http://gmail.com"><i class="gmail"></i></a></li>
+			  <li><a href="http://twitter.com"><i class="twitter"></i></a></li>
+			</ul>
+		</div>
+	</div>
+					</div>
+				<div class="clearfix"></div>
+			</div>
+				</div>
+			</div>	
+			
+</body>
+</html>
