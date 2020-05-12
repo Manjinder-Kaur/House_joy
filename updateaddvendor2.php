@@ -3,6 +3,7 @@ $x=$_REQUEST['vpic'];
 
 $mven=$_REQUEST['mven'];
 $memail=$_REQUEST['memail'];
+$mpass=$_REQUEST['mpass'];
 $mcontact=$_REQUEST['mcontact'];
 $mpro=$_REQUEST['mpro'];
 $mxp=$_REQUEST['mexp'];
@@ -30,14 +31,14 @@ if($_FILES['file']['error']>0)
 $arr=explode(".",$fn);
 $extension=end($arr);
 $newname=md5($msname).".".$extension;
-$path="images/".$fn;
+$path="/images/".$fn;
 
 
 move_uploaded_file($ftmp,$path);
 
 	}
 
-$m="UPDATE `vendor` SET `v_name`='$mven',`v_email`='$memail',`v_contact`='$mcontact',`v_professional`='$mpro',`v_experience`='$mexp',`v_address`='$madd',`v_pic`='$path',`v_status`='$mmst' WHERE `v_id`='$x'";	
+$m="UPDATE `vendor` SET `v_name`='$mven',`v_email`='$memail',`v_password`='$mpass',`v_contact`='$mcontact',`v_professional`='$mpro',`v_experience`='$mexp',`v_address`='$madd',`v_pic`='$path',`v_status`='$mmst' WHERE `v_id`='$x'";	
 echo $m ;
 //$m="update items set product_name='$Dsname',price='$Fees',product_detail='$Discount'
 //,product_pic='' where product_id=$Did ";

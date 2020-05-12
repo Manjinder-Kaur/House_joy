@@ -2,7 +2,7 @@
 <!--start-booking-->
 	<div class="booking">
 		<div class="container">
-		<h1>Manage Add Product</h1></br>
+		<h1>Manage Add Vendor</h1></br>
 
 <?php 
 $x=$_REQUEST['x'];
@@ -18,17 +18,18 @@ if($row=mysqli_fetch_array($query))
 	$vid=$row['0'];
 	$vname = $row['1'];
 	$vemail = $row['2'];
-    $vcontact=$row['3'];
-	$vprofessional = $row['4'];
-	$vexperience = $row['5'];
-    $vaddress = $row['6'];
-	$vpic = $row['7'];
-    $vstatus =$row['8'];
+	$vpass = $row['3'];
+    $vcontact=$row['4'];
+	$vprofessional = $row['5'];
+	$vexperience = $row['6'];
+    $vaddress = $row['7'];
+	$vpic = $row['8'];
+    $vstatus =$row['9'];
 }
 	
 ?>
            <div class="col-sm-6">
-			<img src="<?php echo $vpic; ?>" style="height:500px;width:400px;"/>
+			<img src="<?php echo "../admin/$row[8]"; ?>" style="height:200px;width:200px;"/>
 			</div>
 			<div class="col-sm-6">
 			<form class="form-horizontal" action="updateaddvendor2.php" method="post" enctype="multipart/form-data">
@@ -37,40 +38,46 @@ if($row=mysqli_fetch_array($query))
 		   
 		   <label for="mven" class="col-sm-2 control-label">Manage Add vendor Name</label>
 				<div class="col-sm-10">
-				 <input type="text" class="form-control" name="mven" value="<?php echo $vname ?>"
+				 <input type="text" class="form-control" name="mven" required="required" value="<?php echo $vname ?>"
 				 placeholder="Manage Add vendor Name">
 				</div>
 			  </div>
 			 <div class="form-group">
 				<label for="memail" class="col-sm-2 control-label">Manage Add vendor Email</label>
 				<div class="col-sm-10"	id="locate">
-				  <input type="text" class="form-control" name="memail" value="<?php echo $vemail ?>" placeholder="Manage Add vendor Email">
+				  <input type="text" class="form-control" name="memail" required="required" value="<?php echo $vemail ?>" placeholder="Manage Add vendor Email">
+				</div>
+			  </div>
+			  <div class="form-group">
+				<label for="mpass" class="col-sm-2 control-label">Manage Add vendor Password</label>
+				<div class="col-sm-10"	id="locate">
+				  <input type="password" class="form-control" name="mpass" required="required" value="<?php echo $vpass ?>" placeholder="Manage Add vendor Password">
 				</div>
 			  </div>
 			  <div class="form-group">
 				<label for="mcontact" class="col-sm-2 control-label">Manage Add vendor Contact</label>
 				<div class="col-sm-10">
-				  <input type="text" class="form-control" name="mcontact" value="<?php echo $vcontact ?>" placeholder="Manage Add vendor Contact">
+				  <input type="text" class="form-control" name="mcontact" required="required" value="<?php echo $vcontact ?>" placeholder="Manage Add vendor Contact">
 				</div>
 			  </div>
 			  <div class="form-group">
 				<label for="mpro" class="col-sm-2 control-label">Manage Add vendor Professional</label>
 				<div class="col-sm-10">
-				  <input type="text" class="form-control" name="mpro" value="<?php echo $vprofessional ?>" placeholder="Manage Add vendor Professional">
+				  <input type="text" class="form-control" name="mpro" required="required" value="<?php echo $vprofessional ?>" placeholder="Manage Add vendor Professional">
 				</div>
 			  </div>
 			  
 			  <div class="form-group">
 				<label for="mexp" class="col-sm-2 control-label">Manage Add vendor Experience</label>
 				<div class="col-sm-10">
-				  <input type="text" class="form-control" name="mexp" value="<?php echo $vexperience ?>" placeholder="Manage Add vendor Experience">
+				  <input type="text" class="form-control" name="mexp" required="required" value="<?php echo $vexperience ?>" placeholder="Manage Add vendor Experience">
 				</div>
 			  </div>
 			  
 			  <div class="form-group">
 				<label for="madd" class="col-sm-2 control-label">Manage Add vendor Address</label>
 				<div class="col-sm-10">
-				  <input type="text" class="form-control" name="madd" value="<?php echo $vaddress ?>" placeholder="Manage Add vendor Address">
+				  <input type="text" class="form-control" name="madd" required="required" value="<?php echo $vaddress ?>" placeholder="Manage Add vendor Address">
 				</div>
 			  </div>
 			  
@@ -86,7 +93,7 @@ if($row=mysqli_fetch_array($query))
 			  <div class="form-group">
 				<label for="mst" class="col-sm-2 control-label">Manage Add Vendor Status</label>
 				<div class="col-sm-10">
-				  <input type="text" name="mst" value="<?php echo $vstatus ?>" placeholder="Manage Add vendor Status">
+				  <input type="text" name="mst" required="required" value="<?php echo $vstatus ?>" placeholder="Manage Add vendor Status">
 				</div>
 			  
 			  

@@ -1,91 +1,63 @@
-<?php include("header.php");?>
-   <!---->
-	<div class="content">
-		<div class="container">
-			<div class="content-top">
-				<h3 style="text-align:center;">Our House Joy Category</h3>
-				<div class="col-md-4 grid">
-				<img class="img-responsive" style="height:260px"  src="images/a1.jpg" alt=""/>
-					<div class="simply" >
-						<h4>beauty</h4>
-						<p>A beauty salon or beauty parlor (beauty parlour) (or sometimes beauty shop) is an establishment dealing with cosmetic treatments for men and women.</p>
-					</div></a>
+<!doctype html>
+<html>
 
-				</div>
-				<div class="col-md-4 grid">
-					<img class="img-responsive" style="height:260px" src="images/a2.jpg" alt=""/>
-					<div class="simply" >
-						<h4>plumbing</h4>
-						<p>A plumbing fixture is an exchangeable device which can be connected to a plumbing system to .. The additional complexity of these fixtures also complicates repairs, particularly the diagnosis of malfunctions causing unexpected flushing.</p>
-					</div></a>
-				</div>
-				<div class="col-md-4 grid">
-					<img class="img-responsive" style="height:260px" src="images/a3.jpg" alt=""/>
-					<div class="simply" >
-						<h4>computer repair</h4>
-						<p>Computer maintenance is the practice of keeping computers in a good state of repair. A computer containing accumulated dust and debris may not run properly.</p>
-					</div></a>
-				</div>
-				
-				<div class="col-md-4 grid">
-					<img class="img-responsive" style="height:260px" src="images/a4.jpg" alt=""/>
-					<div class="simply" >
-						<h4>electrician</h4>
-						<p>An electrician is a tradesperson specializing in electrical wiring of buildings, stationary machines, and related equipment. Electricians may be employed in the installation of new electrical components or the maintenance and repair of existing electrical infrastructure.</p>
-					</div></a>
-				</div>
-				
-				<div class="col-md-4 grid">
-					<img class="img-responsive" style="height:260px" src="images/a5.jpg" alt=""/>
-					<div class="simply" >
-						<h4>appliance repair</h4>
-						<p>House appliances are electrical/mechanical machines which accomplish some household .This division is also noticeable in the maintenance and repair of these kinds of products</p>
-					</div></a>
-				</div>
-				
-				<div class="col-md-4 grid">
-					<img class="img-responsive" style="height:260px" src="images/a6.jpg" alt=""/>
-					<div class="simply" >
-						<h4>carpentry</h4>
-						<p>Carpentry is a skilled trade in which the primary work performed is the cutting, shaping and installation of building materials during the construction of buildings, ships, timber bridges, concrete formwork, etc. Carpenters traditionally worked with natural wood and did the rougher work such as framing, but today many other materials are also used.</p>
-					</div></a>
-				</div>
-				
-				<div class="col-md-4 grid">
-				<img class="img-responsive" style="height:260px" src="images/a7.jpg" alt=""/>
-					<div class="simply" >
-						<h4>air condition</h4>
-						<p>Air conditioning is the process of removing heat from a confined space, thus cooling the air, and removing humidity. Air conditioning can be used in both domestic and commercial environments. </p>
-					</div></a>
-				</div>
-				
-				<div class="col-md-4 grid">
-					<img class="img-responsive" style="height:260px" src="images/a8.jpg" alt=""/>
-					<div class="simply" >
-						<h4>car and bike</h4>
-						<p>An automobile repair shop (also known as a garage) is a repair shop where automobiles are repaired by auto mechanics and technicians.A bike is a two wheeler motor vehicle. Motorcycle design varies greatly to suit a ... Street bikes include cruisers, sportbikes, scooters and mopeds,</p>
-					</div></a>
-				</div>
-				<div class="col-md-4 grid">
-				<img class="img-responsive" style="height:260px" src="images/a9.jpg" alt=""/>
-					<div class="simply" >
-						<h4>house painting</h4>
-						<p>A house painter and decorator is a tradesman responsible for the painting and decorating of buildings, and is also known as a decorator or house painter.</p>
-					</div></a>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			</div>
+<head>
+	<style>
+		*{
+		margin:0px;
+		padding:0px;
+		}
+		.container-fluid{
+		width:100%;
+		height:695px;
+		background:url('images/bg.jpg') no-repeat;
+		background-size:100% 100%;
+		}
+		.emptydiv{
+		width:100%; height:30%; 
+		}
+		.container{
+		width:34%; height:30%;
+		background:rgba(241,241,241,0.7);
+		margin:auto; 
+		font-size:25px;
 		
-	
+		color:rgb(133,110,166);
+		text-shadow:0px 0px 10px  black;
+		}
+		.form
+		{
+		height:30px; width:100%; border-radius:5px;
+		border:2px ridge black;
+		}
+		.btn
+		{
+		 background:rgb(134,88,166); border-radius:5px; 
+		border-radius:10px solid blue; width:70px; height:30px;
+		}
+	</style>
+	<meta charset="utf-8"/>
+	<title>Manager Page</title>
+</head>
+<body>
 
-					<div class="clearfix"> </div>
-		   	</div>
-		   	<div class="clearfix"> </div>
-		 
 
-
-	
-	
-
-<?php include("footer.php");?>
+	<div class="container-fluid">
+		<div class="emptydiv"></div>
+			<div class="container logindiv"><h1 style="text-align:center;">Manager</h1>
+			<form class="form-horizontal" action="getlogin.php" method="post">
+<table cellpadding="0" cellspacing="0" width="400px" align="center" class="formTable">
+<tr><td colspan="2" class="headRow"></td></tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td width="50%" style="padding-left:30px">UserName</td><td width="50%"><input type="text" name="name" required /></td></tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td width="50%" style="padding-left:30px">Password</td><td width="50%"><input type="password" name="pass" required /></td></tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td width="50%">&nbsp;</td><td width="50%"><input type="submit" class="btn btn-primary" value="login" name="sub" /></td></tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+</table>
+</form>
+</div>
+</div>
+</body>
+</html>

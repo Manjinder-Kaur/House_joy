@@ -1,28 +1,63 @@
-<?php include("header1.php")?>
+<!doctype html>
+<html>
+
+<head>
+	<style>
+		*{
+		margin:0px;
+		padding:0px;
+		}
+		.container-fluid{
+		width:100%;
+		height:695px;
+		background:url('images/bg.jpg') no-repeat;
+		background-size:100% 100%;
+		}
+		.emptydiv{
+		width:100%; height:30%; 
+		}
+		.container{
+		width:30%; height:30%;
+		background:rgba(241,241,241,0.7);
+		margin:auto; 
+		font-size:2px;
 		
-<div class="container">
-				<h2 class="agile-inner-title" style="color:black;text-align:center;">User Name</h2>	
-</div>				
-				<form class="form-horizontal" action="getlogin.php" method="post" enctype="multipart/form-data">
-			<div class="form-group">
-				<h4><label for="email" class="col-sm-2 control-label ">Email</label></h4>
-				<div class="col-sm-10">
-				<input type="text" name="email" required="required" class="form-control input-lg " id="username" placeholder="Enter Email">
-				</div>
-			</div>
-			
-<div class="form-group">
-				<h4><label for="password" class="col-sm-2 control-label "> Password</label></h4>
-				<div class="col-sm-10">
-				<input type="password" name="password" required="required" class="form-control input-lg " id="email" placeholder="Enter Password">
-				</div>
-			</div>
-<div class="form-group">
-								  
-				<div class="col-sm-offset-2 col-sm-10">
-				<button type="login" class="btn  btn-lg btn-default btn-danger">Login</button>
-				<a href="forgotpassword.php"class="btn  btn-lg btn-default btn-danger">Forgot Password</a>
-				</div>
-			</div>
-			</form>
-			<?php include("footer.php")?>
+		color:rgb(133,110,166);
+		text-shadow:0px 0px 10px  black;
+		}
+		.form
+		{
+		height:30px; width:100%; border-radius:5px;
+		border:2px ridge black;
+		}
+		.btn
+		{
+		 background:rgb(134,88,166); border-radius:5px; 
+		border-radius:10px solid blue; width:70px; height:30px;
+		}
+	</style>
+	<meta charset="utf-8"/>
+	<title>Manager page</title>
+</head>
+<body>
+
+
+	<div class="container-fluid">
+		<div class="emptydiv"></div>
+			<div class="container logindiv"><h1 style="text-align:center;">Manager</h1>
+			<form class="form-horizontal" action="getlogin.php" method="post">
+<table cellpadding="0" cellspacing="0" width="400px" align="center" class="formTable">
+<tr><td colspan="2" class="headRow"></td></tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td width="50%" style="padding-left:30px">UserName</td><td width="50%"><input type="text" name="name" required /></td></tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td width="50%" style="padding-left:30px">Password</td><td width="50%"><input type="password" name="pass" required /></td></tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td width="50%">&nbsp;</td><td width="50%"><input type="submit" value="login" name="sub"class="btn btn-primary" /></td></tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+</table>
+</form>
+</div>
+</div>
+</body>
+</html>

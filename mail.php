@@ -8,13 +8,13 @@
 			</div>
 			<div class="contact-non">
 					<div class="col-md-6 contact-inline">
-				     	<h3>Contact Us</h3>
-						<img class="img-responsive" style="height:350px" src="images/looo.jpg" alt=""/>
-						
+				     	<h3>Company Information</h3>
+						<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.						</p>
 						    	<ul class="social ">
-						<li><span><i> </i>o7 Services 2nd Floor,Badwal Complex, </br>Near Narinder Cinema ,Bus Stand ,Jalandhar </span></li>
-						<li><span><i class="down"> </i>95012-23775</span></li>
-						<li><a href="mailto:info@example.com"><i class="mes"> </i>preetjas420@yahoo.com</a></li>
+						<li><span><i> </i>124 Avenue Street, Los angeles,California </span></li>
+						<li><span><i class="down"> </i>+ 00 123 456 7890</span></li>
+						<li><a href="mailto:info@example.com"><i class="mes"> </i>info@example.com</a></li>
 					</ul>
 				    </div>
 					<div class="col-md-6 contact-grid">
@@ -34,4 +34,28 @@
 			</div>
 		</div>
 	</div>
-<?php	include("footer.php");?>
+	<div class="footer">
+				<div class="container">
+				<div class="footer-bottom-at">
+					<div class="col-md-6 footer-grid">
+						<h3>Turistik</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+					<div class="col-md-6 footer-grid-in">
+					<ul class="footer-nav">
+						 <li ><a href="index.html">Home</a>|</li>
+					  <li><a href="booking.html">Booking</a>|</li>
+					  <li><a href="404.html">Services</a>|</li>
+					  <li><a href="projects.html">Projects</a>|</li>
+					  <li><a href="blog.html">Blog</a>|</li>
+					  <li><a href="mail.html">Mail</a></li>	
+					</ul>
+					<p class="footer-class"> © 2015 Turistik Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				</div>
+			</div>
+
+</body>
+</html>

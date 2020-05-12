@@ -1,25 +1,34 @@
 <?php session_start();
-$e=$_REQUEST['email'];
-$p=$_REQUEST['password'];
-include "config.php";
+		if(isset($_REQUEST['sub']))
+		{
+		$n=$_REQUEST['name'];
+		$p=$_REQUEST['pass'];
+		
+		$dd = date('d/m/y');
+		$ip = $_SERVER['REMOTE_ADDR'];
 
-//$result=mysqli_query($obj,"select * from register ('$u','$p')");
+		include "config.php";
+		$q="select * from manager where username='$n' and password='$p'";
+		$result=mysqli_query($obj,$q);
+		if($row=mysqli_fetch_array($result))
+		{
+			// Insert into newtab va('$n',;$data ,aip)
+			$q="insert into showip values('$n','$dd','$ip')";
+			$result=mysqli_query($obj,$q);
+			if($result>0)
+			
+			{
+				echo "insert";
+			}
+			$_SESSION['name']=$n;
+			header("location:index1.php");
+		}
+		else
+		{
+		mysqli_error($obj);
+		 echo "<script>alert('Invalid Username or Password');</script>";
+		 
+		}
 
-$q="SELECT * FROM `register` WHERE `email`='$e' and `password`='$p'";
-echo $q;
-$result=mysqli_query($obj,$q);
-if($row=mysqli_fetch_array($result))
-{
-	$_SESSION['email']=$e;
-	//echo "insert";
-	header("location:location.php");
-	
-}
-else
-{
-	header("location:login.php?x=nocorrect");
-}
-
-mysqli_close($obj);
-
-?>
+		}
+	?>
