@@ -26,15 +26,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--//fonts-->
     <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 <script src="js/bootstrap.min.js"></script>
-<!--Start of Zendesk Chat Script-->
-<script type="text/javascript">
-window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-$.src="https://v2.zopim.com/?4nPiwBdrmUJm98w1L7tpw1JpjSw4NIXP";z.t=+new Date;$.
-type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-</script>
-<!--End of Zendesk Chat Script-->
 </head>
 <body> 
 	<!--header-->	
@@ -43,7 +34,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
         <div class="container">
 		<div class="header-top-top">
 			<div class=" header-top-left">
-				<p>Contact us <span>9041144191</span></p>
+				<p>Contact us <span>95012-23775</span></p>
 			</div>
 			<div class=" header-top-right">
 			 

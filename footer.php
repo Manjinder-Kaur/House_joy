@@ -8,23 +8,29 @@
 					<div class="col-md-6 footer-grid-in">
 					   	<div class="footer-nav">
 					<ul>
-					<li  class="active"><a href="index.php">Home</a></li>
-					 <li><a href="a.php">Service</a></li>
-					 <?php
-			$t=0;
-			if(isset($_SESSION['cart'])&&count($_SESSION['cart'])>0){
-				foreach($_SESSION['cart'] as $id=>$quantity){
-					$t++;
-				}
-				count($_SESSION['cart']);
-			}
-			?>
-					  <li><a href="checkout.php">cart<?php echo $t; ?></a></li>
-					  <li><a href="addvendor.php">Vendor</a></li>
-					  <li><a href="contactus.php">Contact us</a></li>
+						<li><a href="index.php">Home</a></li>
+					<li><a href="approved.php">See Order</a></li>
+					  <!---<li class="dropdown">
+						<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><a href="cat.php?x=1">Beauty</a></li>
+							<li><a href="cat.php?x=2">Plumbing</a></li>
+							<li><a href="cat.php?x=3">Computer Repair</a></li>
+							<li><a href="cat.php?x=4">Electrician</a></li>
+							<li><a href="cat.php?x=5">Appliance repair</a></li>
+							<li><a href="cat.php?x=6">Carpentry</a></li>
+							<li><a href="cat.php?x=7">Air Condition</a></li>
+							<li><a href="cat.php?x=8">Car and Bike</a></li>
+							<li><a href="cat.php?x=9">House Painting</a></li>
+						  </ul>
+						  
+
+						</li>--->
+						
+				
+			 <li><a href="logout.php">Logout</a></li>
      		 		</ul>
-					</ul>
-					<p class="footer-class"style="font-size:17px"> © 2017 House Joy Design by  <a href="http://w3layouts.com/" target="_blank">Manjinder Kaur</a> </p>
+					<p class="footer-class"style="font-size:17px"> © 2017 House Joy Design by  <a href="http://w3layouts.com/" target="_blank">Jaspreet Singh</a> </p>
 					</div>
 					<div class="container">
 		

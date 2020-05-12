@@ -25,9 +25,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
 <!--//fonts-->
 <script src="js/bootstrap.min.js"></script>
-
-
-
 </head>
 <body> 
 		<!--header-->	
@@ -36,7 +33,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="container">
 		<div class="header-top-top">
 			<div class=" header-top-left">
-				<p>Contact us<span>9041144191</span></p>	 		
+				<p>Contact us<span>95012-23775</span></p>	 		
 			</div>
   	         <div class=" header-top-right"style="color:white;">
 			 <?php if(isset($e))
@@ -91,7 +88,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			?>
 					  <li><a href="checkout.php">cart<?php echo $t; ?></a></li>
 					  <li><a href="addvendor.php">Vendor</a></li>
-					  <li><a href="logout.php">logout</a></li>
 					  <li><a href="contactus.php">Contact us</a></li>
      		 		</ul>
 					<script>

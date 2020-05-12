@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-unset($_SESSION['email']);
-header("location:index.php");
+unset($_SESSION['vender']);
+header("location:../index.php");
  
 ?>

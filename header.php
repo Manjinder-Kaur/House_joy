@@ -1,4 +1,9 @@
-
+<?php session_start();
+if(isset($_SESSION['vender']))
+{
+	$v=$_SESSION['vender'];
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,7 +48,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
         <div class="container">
 		<div class="header-top-top">
 			<div class=" header-top-left">
-				<p>Contact us <span>9041144191</span></p>
+				<p>Contact us <span>95012-23775</span></p>
 			</div>
 			<div class=" header-top-right">
 			 
@@ -67,8 +72,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 				<span class="menu"><img src="images/menu.png" alt=""> </span>
  	
      		 		<ul>
-					<li><a href="index.php">Home</a></li>
-					<li><a href="a.php">Service</a></li>
+						<li><a href="index.php">Home</a></li>
+					<li><a href="approved.php">See Order</a></li>
 					  <!---<li class="dropdown">
 						<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
 						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -85,18 +90,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 						  
 
 						</li>--->
-						<?php
-			$t=0;
-			if(isset($_SESSION['cart'])&&count($_SESSION['cart'])>0){
-				foreach($_SESSION['cart'] as $id=>$quantity){
-					$t++;
-				}
-				count($_SESSION['cart']);
-			}
-			?>
-				<li><a href="checkout.php">Cart<?php echo $t; ?></a></li>
-				<li><a href="addvendor.php">Vendor</a></li>
-			 <li><a href="contactus.php">Contact Us</a></li>
+						
+				
+			 <li><a href="logout.php">Logout</a></li>
      		 		</ul>
 					<script>
 						$("span.menu").click(function(){

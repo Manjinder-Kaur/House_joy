@@ -1,7 +1,7 @@
 <?php session_start();
-if(isset($_SESSION['email']))
+if(isset($_SESSION['vender']))
 {
-	$e=$_SESSION['email'];
+	$v=$_SESSION['vender'];
 }
 ?>
 <!DOCTYPE html>
@@ -36,7 +36,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="container">
 		<div class="header-top-top">
 			<div class=" header-top-left">
-				<p>Contact us<span>9041144191</span></p>	 		
+				<p>Contact us<span>95012-23775</span></p>	 		
 			</div>
   	         <div class=" header-top-right"style="color:white;">
 			 <?php if(isset($e))
@@ -62,8 +62,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<span class="menu"><img src="images/menu.png" alt=""> </span>
 
      		 		<ul>
-						<li  class="active"><a href="index.php">Home</a></li>
-						 <li><a href="a.php">Service</a></li>
+						<li><a href="index.php">Home</a></li>
+					<li><a href="approved.php">See Order</a></li>
 					  <!---<li class="dropdown">
 						<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
 						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -80,19 +80,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  
 
 						</li>--->
-						<?php
-			$t=0;
-			if(isset($_SESSION['cart'])&&count($_SESSION['cart'])>0){
-				foreach($_SESSION['cart'] as $id=>$quantity){
-					$t++;
-				}
-				count($_SESSION['cart']);
-			}
-			?>
-					  <li><a href="checkout.php">cart<?php echo $t; ?></a></li>
-					  <li><a href="addvendor.php">Vendor</a></li>
-					  <li><a href="logout.php">logout</a></li>
-					  <li><a href="contactus.php">Contact us</a></li>
+						
+				
+			 <li><a href="logout.php">Logout</a></li>
      		 		</ul>
 					<script>
 						$("span.menu").click(function(){
